@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="cf7824c8b0154de3b9615d1c79b2a0ee" Name="Diagram1">
+        <EntityTypeShape EntityType="UnitedModel.tblIndividual" Width="1.5" PointX="3" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnitedModel.tblIndividualPropertyRole" Width="1.5" PointX="5.25" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnitedModel.tblMasterUser" Width="1.5" PointX="0.75" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnitedModel.tblMasterUserRole" Width="1.5" PointX="3" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnitedModel.tblRole" Width="1.5" PointX="3" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnitedModel.tblTSCompanyCode" Width="2.25" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnitedModel.tblTSEmployeeInfo" Width="1.5" PointX="8.25" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnitedModel.tblTSHoursType" Width="1.5" PointX="8.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnitedModel.tblTSPayPeriod" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnitedModel.tblTSStatusType" Width="1.5" PointX="8.25" PointY="22.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnitedModel.tblTSTimesheetHour" Width="1.5" PointX="10.5" PointY="9.875" IsExpanded="true" />
+        <AssociationConnector Association="UnitedModel.FK_tblIndividual_CreatedByMasterUser" ManuallyRouted="false" />
+        <AssociationConnector Association="UnitedModel.FK_tblIndividual_ModifiedByMasterUser" ManuallyRouted="false" />
+        <AssociationConnector Association="UnitedModel.FK_tblIndividualPropertyRoles_tblIndividual" ManuallyRouted="false" />
+        <AssociationConnector Association="UnitedModel.FK_tblTSEmployeeInfo_tblIndividual" ManuallyRouted="false" />
+        <AssociationConnector Association="UnitedModel.FK_tblMasterUser_tblMasterUser" ManuallyRouted="false" />
+        <AssociationConnector Association="UnitedModel.FK_tblMasterUser_tblMasterUserModifiedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="UnitedModel.FK_tblMasterUserRole_MasterUser" ManuallyRouted="false" />
+        <AssociationConnector Association="UnitedModel.FK_tblRole_CreatedByMasterUser" ManuallyRouted="false" />
+        <AssociationConnector Association="UnitedModel.FK_tblRolePermission_CreatedByMasterUser" ManuallyRouted="false" />
+        <AssociationConnector Association="UnitedModel.FK_tblTSEmployeeInfo_tblMasterUser" ManuallyRouted="false" />
+        <AssociationConnector Association="UnitedModel.FK_tblTSTimesheetHours_tblTSEmployeeInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="UnitedModel.FK_tblTSTimesheetHours_tblTSHoursType" ManuallyRouted="false" />
+        <AssociationConnector Association="UnitedModel.FK_tblTSTimesheetHours_tblTSStatusType" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "Navigation Tab of Timesheet";
+}
+
+<div class="container">
+    <div class="navbar-collapse collapse">
+        <nav>
+            <ul class="nav nav-tabs">
+                <!--Notes: nav-tabs style will work only for link tag-->
+                <li id="navTimesheetOverview">
+                    @Html.RouteLink(
+                        linkText: "Timesheet Overview",
+                        routeValues: new { controller = "OverView", action = "Index" }
+                   )
+                </li>
+                <li id="navTimesheet">
+                    @Html.RouteLink(
+                        linkText: "Timesheet",
+                        routeValues: new { controller = "Timesheets", action = "Index" }
+                   )
+                </li>
+                <li id="navTimesheetManagement">
+                    @Html.RouteLink(
+                        linkText: "Management",
+                        routeValues: new { controller = "Management", action = "Index" }
+                   )
+                </li>
+                <li id="navTimesheetHrAdmin">
+                    @Html.RouteLink(
+                        linkText: "HR Administration",
+                        routeValues: new { controller = "HRAdministration", action = "Index" }
+                   )
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+

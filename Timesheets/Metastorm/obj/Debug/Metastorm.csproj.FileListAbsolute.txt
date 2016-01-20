@@ -1,0 +1,5 @@
+C:\DEV\Websites\Web\WebApplication\Timesheets\Metastorm\bin\Debug\NM.Web.WebApplication.Timesheets.Metastorm.dll
+C:\DEV\Websites\Web\WebApplication\Timesheets\Metastorm\bin\Debug\NM.Web.WebApplication.Timesheets.Metastorm.pdb
+C:\DEV\Websites\Web\WebApplication\Timesheets\Metastorm\obj\Debug\NM.Web.WebApplication.Timesheets.Metastorm.dll
+C:\DEV\Websites\Web\WebApplication\Timesheets\Metastorm\obj\Debug\NM.Web.WebApplication.Timesheets.Metastorm.pdb
+C:\DEV\Websites\Web\WebApplication\Timesheets\Metastorm\obj\Debug\Metastorm.csprojResolveAssemblyReference.cache

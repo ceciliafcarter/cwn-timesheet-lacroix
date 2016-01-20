@@ -1,0 +1,10 @@
+C:\DEV\Websites\Web\WebApplication\Timesheets\United\bin\Debug\NM.Web.WebApplication.Timesheets.United.dll
+C:\DEV\Websites\Web\WebApplication\Timesheets\United\bin\Debug\NM.Web.WebApplication.Timesheets.United.pdb
+C:\DEV\Websites\Web\WebApplication\Timesheets\United\obj\Debug\NM.Web.WebApplication.Timesheets.United.dll
+C:\DEV\Websites\Web\WebApplication\Timesheets\United\obj\Debug\NM.Web.WebApplication.Timesheets.United.pdb
+C:\DEV\Websites\Web\WebApplication\Timesheets\United\bin\Debug\NM.Web.WebApplication.Timesheets.United.dll.config
+C:\DEV\Websites\Web\WebApplication\Timesheets\United\bin\Debug\EntityFramework.dll
+C:\DEV\Websites\Web\WebApplication\Timesheets\United\bin\Debug\EntityFramework.SqlServer.dll
+C:\DEV\Websites\Web\WebApplication\Timesheets\United\bin\Debug\EntityFramework.xml
+C:\DEV\Websites\Web\WebApplication\Timesheets\United\bin\Debug\EntityFramework.SqlServer.xml
+C:\DEV\Websites\Web\WebApplication\Timesheets\United\obj\Debug\United.csprojResolveAssemblyReference.cache

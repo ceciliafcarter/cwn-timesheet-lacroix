@@ -1,0 +1,16 @@
+
+
+INSERT dbo.tblTSCompanyCode (txtCompanyCode, txtCompanyStatus)
+VALUES ('W35', 'Open')
+INSERT dbo.tblTSCompanyCode (txtCompanyCode, txtCompanyStatus)
+VALUES ('W31', 'Open')
+INSERT dbo.tblTSCompanyCode (txtCompanyCode, txtCompanyStatus)
+VALUES ('TFG', 'Open')
+INSERT dbo.tblTSCompanyCode (txtCompanyCode, txtCompanyStatus)
+VALUES ('T7L', 'Open')
+INSERT dbo.tblTSCompanyCode (txtCompanyCode, txtCompanyStatus)
+VALUES ('T8P', 'Open')
+INSERT dbo.tblTSCompanyCode (txtCompanyCode, txtCompanyStatus)
+VALUES ('YED', 'Open')
+INSERT dbo.tblTSCompanyCode (txtCompanyCode, txtCompanyStatus)
+VALUES ('ZUR', 'Open')

@@ -1,0 +1,11 @@
+C:\DEV\Websites\Web\WebApplication\Timesheets\UnitedTests\bin\Debug\UnitedTests.dll
+C:\DEV\Websites\Web\WebApplication\Timesheets\UnitedTests\bin\Debug\UnitedTests.pdb
+C:\DEV\Websites\Web\WebApplication\Timesheets\UnitedTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\DEV\Websites\Web\WebApplication\Timesheets\UnitedTests\bin\Debug\NM.Web.WebApplication.Timesheets.United.dll
+C:\DEV\Websites\Web\WebApplication\Timesheets\UnitedTests\bin\Debug\EntityFramework.dll
+C:\DEV\Websites\Web\WebApplication\Timesheets\UnitedTests\bin\Debug\NM.Web.WebApplication.Timesheets.United.pdb
+C:\DEV\Websites\Web\WebApplication\Timesheets\UnitedTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\DEV\Websites\Web\WebApplication\Timesheets\UnitedTests\bin\Debug\EntityFramework.xml
+C:\DEV\Websites\Web\WebApplication\Timesheets\UnitedTests\obj\Debug\UnitedTests.csprojResolveAssemblyReference.cache
+C:\DEV\Websites\Web\WebApplication\Timesheets\UnitedTests\obj\Debug\UnitedTests.dll
+C:\DEV\Websites\Web\WebApplication\Timesheets\UnitedTests\obj\Debug\UnitedTests.pdb

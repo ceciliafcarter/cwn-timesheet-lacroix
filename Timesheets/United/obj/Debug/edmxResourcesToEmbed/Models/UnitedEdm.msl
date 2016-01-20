@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="UnitedModelStoreContainer" CdmEntityContainer="UnitedEntities">
+    <EntitySetMapping Name="tblIndividuals">
+      <EntityTypeMapping TypeName="UnitedModel.tblIndividual">
+        <MappingFragment StoreEntitySet="tblIndividual">
+          <ScalarProperty Name="IndividualID" ColumnName="IndividualID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="MasterUserID" ColumnName="MasterUserID" />
+          <ScalarProperty Name="Cell" ColumnName="Cell" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="AddressLine1" ColumnName="AddressLine1" />
+          <ScalarProperty Name="AddressLine2" ColumnName="AddressLine2" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="ModifiedDatetime" ColumnName="ModifiedDatetime" />
+          <ScalarProperty Name="ModifiedByMasterUserID" ColumnName="ModifiedByMasterUserID" />
+          <ScalarProperty Name="CreatedDatetime" ColumnName="CreatedDatetime" />
+          <ScalarProperty Name="CreatedByMasterUserID" ColumnName="CreatedByMasterUserID" />
+          <ScalarProperty Name="SecondaryTitle" ColumnName="SecondaryTitle" />
+          <ScalarProperty Name="Designations" ColumnName="Designations" />
+          <ScalarProperty Name="MailStop" ColumnName="MailStop" />
+          <ScalarProperty Name="PhoneExtension" ColumnName="PhoneExtension" />
+          <ScalarProperty Name="PersonalysisFile" ColumnName="PersonalysisFile" />
+          <ScalarProperty Name="Birthdate" ColumnName="Birthdate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="TermDate" ColumnName="TermDate" />
+          <ScalarProperty Name="Inactive" ColumnName="Inactive" />
+          <ScalarProperty Name="OfficeLocationBuildingID" ColumnName="OfficeLocationBuildingID" />
+          <ScalarProperty Name="Clock" ColumnName="Clock" />
+          <ScalarProperty Name="ShowInPhoneLists" ColumnName="ShowInPhoneLists" />
+          <ScalarProperty Name="LogicalDepartment" ColumnName="LogicalDepartment" />
+          <ScalarProperty Name="OfficeLocationsID" ColumnName="OfficeLocationsID" />
+          <ScalarProperty Name="IsEmployee" ColumnName="IsEmployee" />
+          <ScalarProperty Name="LogicalDepartmentID" ColumnName="LogicalDepartmentID" />
+          <ScalarProperty Name="PersonalEmail" ColumnName="PersonalEmail" />
+          <ScalarProperty Name="HomePhone" ColumnName="HomePhone" />
+          <ScalarProperty Name="PersonalCell" ColumnName="PersonalCell" />
+          <ScalarProperty Name="HomeAddress" ColumnName="HomeAddress" />
+          <ScalarProperty Name="HomeCity" ColumnName="HomeCity" />
+          <ScalarProperty Name="HomeState" ColumnName="HomeState" />
+          <ScalarProperty Name="HomeZipCode" ColumnName="HomeZipCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblIndividualPropertyRoles">
+      <EntityTypeMapping TypeName="UnitedModel.tblIndividualPropertyRole">
+        <MappingFragment StoreEntitySet="tblIndividualPropertyRoles">
+          <ScalarProperty Name="EntityID" ColumnName="EntityID" />
+          <ScalarProperty Name="IndividualID" ColumnName="IndividualID" />
+          <ScalarProperty Name="PropertyRoleID" ColumnName="PropertyRoleID" />
+          <ScalarProperty Name="Sort" ColumnName="Sort" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="ModifiedDatetime" ColumnName="ModifiedDatetime" />
+          <ScalarProperty Name="ModifiedByMasterUserID" ColumnName="ModifiedByMasterUserID" />
+          <ScalarProperty Name="CreatedDatetime" ColumnName="CreatedDatetime" />
+          <ScalarProperty Name="CreatedByMasterUserID" ColumnName="CreatedByMasterUserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblMasterUsers">
+      <EntityTypeMapping TypeName="UnitedModel.tblMasterUser">
+        <MappingFragment StoreEntitySet="tblMasterUser">
+          <ScalarProperty Name="MasterUserID" ColumnName="MasterUserID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="DomainName" ColumnName="DomainName" />
+          <ScalarProperty Name="MRIUserID" ColumnName="MRIUserID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="AcceptedUPDirect" ColumnName="AcceptedUPDirect" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="ModifiedByMasterUserID" ColumnName="ModifiedByMasterUserID" />
+          <ScalarProperty Name="ModifiedDatetime" ColumnName="ModifiedDatetime" />
+          <ScalarProperty Name="CreatedByMasterUserID" ColumnName="CreatedByMasterUserID" />
+          <ScalarProperty Name="CreatedDatetime" ColumnName="CreatedDatetime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblMasterUserRoles">
+      <EntityTypeMapping TypeName="UnitedModel.tblMasterUserRole">
+        <MappingFragment StoreEntitySet="tblMasterUserRole">
+          <ScalarProperty Name="MasterUserID" ColumnName="MasterUserID" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblRoles">
+      <EntityTypeMapping TypeName="UnitedModel.tblRole">
+        <MappingFragment StoreEntitySet="tblRole">
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ApplicationID" ColumnName="ApplicationID" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="ModifiedByMasterUserID" ColumnName="ModifiedByMasterUserID" />
+          <ScalarProperty Name="ModifiedDatetime" ColumnName="ModifiedDatetime" />
+          <ScalarProperty Name="CreatedByMasterUserID" ColumnName="CreatedByMasterUserID" />
+          <ScalarProperty Name="CreatedDatetime" ColumnName="CreatedDatetime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTSCompanyCodes">
+      <EntityTypeMapping TypeName="UnitedModel.tblTSCompanyCode">
+        <MappingFragment StoreEntitySet="tblTSCompanyCode">
+          <ScalarProperty Name="CompanyCodeID" ColumnName="CompanyCodeID" />
+          <ScalarProperty Name="txtCompanyCode" ColumnName="txtCompanyCode" />
+          <ScalarProperty Name="txtCompanyName" ColumnName="txtCompanyName" />
+          <ScalarProperty Name="txtCompanyStatus" ColumnName="txtCompanyStatus" />
+          <ScalarProperty Name="txtCompanyWebsite" ColumnName="txtCompanyWebsite" />
+          <ScalarProperty Name="txtCompanyAbbreviation" ColumnName="txtCompanyAbbreviation" />
+          <ScalarProperty Name="chkTimesheetSystem" ColumnName="chkTimesheetSystem" />
+          <ScalarProperty Name="txtNewCompanyIdentifier" ColumnName="txtNewCompanyIdentifier" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTSEmployeeInfoes">
+      <EntityTypeMapping TypeName="UnitedModel.tblTSEmployeeInfo">
+        <MappingFragment StoreEntitySet="tblTSEmployeeInfo">
+          <ScalarProperty Name="EmployeeInfoId" ColumnName="EmployeeInfoId" />
+          <ScalarProperty Name="MasterUserID" ColumnName="MasterUserID" />
+          <ScalarProperty Name="CompanyCodeId" ColumnName="CompanyCodeId" />
+          <ScalarProperty Name="intEmployeeId" ColumnName="intEmployeeId" />
+          <ScalarProperty Name="HRBP" ColumnName="HRBP" />
+          <ScalarProperty Name="IsNewPosition" ColumnName="IsNewPosition" />
+          <ScalarProperty Name="ReplacingMasterUserId" ColumnName="ReplacingMasterUserId" />
+          <ScalarProperty Name="DateOfWelcomeEmail" ColumnName="DateOfWelcomeEmail" />
+          <ScalarProperty Name="DateOfNewHireFormSent" ColumnName="DateOfNewHireFormSent" />
+          <ScalarProperty Name="DateOfEnteredInPayForce" ColumnName="DateOfEnteredInPayForce" />
+          <ScalarProperty Name="DateOfTimeSaverReminder" ColumnName="DateOfTimeSaverReminder" />
+          <ScalarProperty Name="DateOfBackgroundCheck" ColumnName="DateOfBackgroundCheck" />
+          <ScalarProperty Name="DateOfEVerify" ColumnName="DateOfEVerify" />
+          <ScalarProperty Name="DatePopcornSent" ColumnName="DatePopcornSent" />
+          <ScalarProperty Name="WorkStateID" ColumnName="WorkStateID" />
+          <ScalarProperty Name="ReasonForTermination" ColumnName="ReasonForTermination" />
+          <ScalarProperty Name="SpecialPayIssues" ColumnName="SpecialPayIssues" />
+          <ScalarProperty Name="IsLetterReceived" ColumnName="IsLetterReceived" />
+          <ScalarProperty Name="IsNopaReceived" ColumnName="IsNopaReceived" />
+          <ScalarProperty Name="DateOfEmailSentToTechOps" ColumnName="DateOfEmailSentToTechOps" />
+          <ScalarProperty Name="DateOfExitInterview" ColumnName="DateOfExitInterview" />
+          <ScalarProperty Name="DateOfInformationToPayroll" ColumnName="DateOfInformationToPayroll" />
+          <ScalarProperty Name="DateOfPTOPayout" ColumnName="DateOfPTOPayout" />
+          <ScalarProperty Name="IsNonDisputeUnemployment" ColumnName="IsNonDisputeUnemployment" />
+          <ScalarProperty Name="chkBenefitEligible" ColumnName="chkBenefitEligible" />
+          <ScalarProperty Name="chkPhotoShowExternal" ColumnName="chkPhotoShowExternal" />
+          <ScalarProperty Name="chkPhotoShowInternal" ColumnName="chkPhotoShowInternal" />
+          <ScalarProperty Name="intHRSupervisor" ColumnName="intHRSupervisor" />
+          <ScalarProperty Name="memBiography" ColumnName="memBiography" />
+          <ScalarProperty Name="memHRDelegate" ColumnName="memHRDelegate" />
+          <ScalarProperty Name="realFTE" ColumnName="realFTE" />
+          <ScalarProperty Name="realMaxTimeOffPerWeek" ColumnName="realMaxTimeOffPerWeek" />
+          <ScalarProperty Name="txtDomain" ColumnName="txtDomain" />
+          <ScalarProperty Name="txtNewOrRehire" ColumnName="txtNewOrRehire" />
+          <ScalarProperty Name="txtOfficer" ColumnName="txtOfficer" />
+          <ScalarProperty Name="txtPhotoHighResolution" ColumnName="txtPhotoHighResolution" />
+          <ScalarProperty Name="txtPhotoWeb" ColumnName="txtPhotoWeb" />
+          <ScalarProperty Name="IsNonExempt" ColumnName="IsNonExempt" />
+          <ScalarProperty Name="txtUserID" ColumnName="txtUserID" />
+          <ScalarProperty Name="txtUserIDFics" ColumnName="txtUserIDFics" />
+          <ScalarProperty Name="txtAutograph" ColumnName="txtAutograph" />
+          <ScalarProperty Name="FileNumber" ColumnName="FileNumber" />
+          <ScalarProperty Name="realHoursPerWeek" ColumnName="realHoursPerWeek" />
+          <ScalarProperty Name="memTemp" ColumnName="memTemp" />
+          <ScalarProperty Name="memTemp2" ColumnName="memTemp2" />
+          <ScalarProperty Name="chkProcessAsNewEmployee" ColumnName="chkProcessAsNewEmployee" />
+          <ScalarProperty Name="chkPositionChange" ColumnName="chkPositionChange" />
+          <ScalarProperty Name="chkTimesheetAdmin" ColumnName="chkTimesheetAdmin" />
+          <ScalarProperty Name="dtmTempStartDate" ColumnName="dtmTempStartDate" />
+          <ScalarProperty Name="txtEmploymentType" ColumnName="txtEmploymentType" />
+          <ScalarProperty Name="txtNewEmployeeIdentifier" ColumnName="txtNewEmployeeIdentifier" />
+          <ScalarProperty Name="ManagerComments" ColumnName="ManagerComments" />
+          <ScalarProperty Name="ITComments" ColumnName="ITComments" />
+          <ScalarProperty Name="PhysicalLocation" ColumnName="PhysicalLocation" />
+          <ScalarProperty Name="PreviousExperience" ColumnName="PreviousExperience" />
+          <ScalarProperty Name="TemplateId" ColumnName="TemplateId" />
+          <ScalarProperty Name="ComputerSetupId" ColumnName="ComputerSetupId" />
+          <ScalarProperty Name="AutoAudit_CreatedDate" ColumnName="AutoAudit_CreatedDate" />
+          <ScalarProperty Name="AutoAudit_CreatedBy" ColumnName="AutoAudit_CreatedBy" />
+          <ScalarProperty Name="AutoAudit_ModifiedDate" ColumnName="AutoAudit_ModifiedDate" />
+          <ScalarProperty Name="AutoAudit_ModifiedBy" ColumnName="AutoAudit_ModifiedBy" />
+          <ScalarProperty Name="AutoAudit_RowVersion" ColumnName="AutoAudit_RowVersion" />
+          <ScalarProperty Name="AccountSetupId" ColumnName="AccountSetupId" />
+          <ScalarProperty Name="PhonePassCode" ColumnName="PhonePassCode" />
+          <ScalarProperty Name="BenefitEligible" ColumnName="BenefitEligible" />
+          <ScalarProperty Name="TimesheetAdmin" ColumnName="TimesheetAdmin" />
+          <ScalarProperty Name="EmployeeTerminationid" ColumnName="EmployeeTerminationid" />
+          <ScalarProperty Name="UploadToExternalWebSite" ColumnName="UploadToExternalWebSite" />
+          <ScalarProperty Name="Freddie_Mac_Signatory" ColumnName="Freddie_Mac_Signatory" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTSHoursTypes">
+      <EntityTypeMapping TypeName="UnitedModel.tblTSHoursType">
+        <MappingFragment StoreEntitySet="tblTSHoursType">
+          <ScalarProperty Name="HoursTypeID" ColumnName="HoursTypeID" />
+          <ScalarProperty Name="HoursType" ColumnName="HoursType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTSPayPeriods">
+      <EntityTypeMapping TypeName="UnitedModel.tblTSPayPeriod">
+        <MappingFragment StoreEntitySet="tblTSPayPeriod">
+          <ScalarProperty Name="PayPeriodID" ColumnName="PayPeriodID" />
+          <ScalarProperty Name="clpCSV" ColumnName="clpCSV" />
+          <ScalarProperty Name="dtmPeriodDue" ColumnName="dtmPeriodDue" />
+          <ScalarProperty Name="dtmPeriodEnd" ColumnName="dtmPeriodEnd" />
+          <ScalarProperty Name="dtmPeriodPayDay" ColumnName="dtmPeriodPayDay" />
+          <ScalarProperty Name="dtmPeriodStart" ColumnName="dtmPeriodStart" />
+          <ScalarProperty Name="dtmProcessed" ColumnName="dtmProcessed" />
+          <ScalarProperty Name="txtLastPeriodOfYear" ColumnName="txtLastPeriodOfYear" />
+          <ScalarProperty Name="txtStatus" ColumnName="txtStatus" />
+          <ScalarProperty Name="dtmReminderAllEmployees" ColumnName="dtmReminderAllEmployees" />
+          <ScalarProperty Name="dtmReminderAllNonExempt" ColumnName="dtmReminderAllNonExempt" />
+          <ScalarProperty Name="dtmReminderUnApproved" ColumnName="dtmReminderUnApproved" />
+          <ScalarProperty Name="dtmReminderUnSubmittedNonExempt" ColumnName="dtmReminderUnSubmittedNonExempt" />
+          <ScalarProperty Name="txtVerifyDelete" ColumnName="txtVerifyDelete" />
+          <ScalarProperty Name="chkDateConflict" ColumnName="chkDateConflict" />
+          <ScalarProperty Name="clpCSVNonExempt" ColumnName="clpCSVNonExempt" />
+          <ScalarProperty Name="dtm1stReminder" ColumnName="dtm1stReminder" />
+          <ScalarProperty Name="dtm2ndReminder" ColumnName="dtm2ndReminder" />
+          <ScalarProperty Name="dtmApprovalDueDate" ColumnName="dtmApprovalDueDate" />
+          <ScalarProperty Name="dtmCutOffDate" ColumnName="dtmCutOffDate" />
+          <ScalarProperty Name="IsBiWeeklyPayroll" ColumnName="IsBiWeeklyPayroll" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTSStatusTypes">
+      <EntityTypeMapping TypeName="UnitedModel.tblTSStatusType">
+        <MappingFragment StoreEntitySet="tblTSStatusType">
+          <ScalarProperty Name="StatusTypeID" ColumnName="StatusTypeID" />
+          <ScalarProperty Name="StatusType" ColumnName="StatusType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTSTimesheetHours">
+      <EntityTypeMapping TypeName="UnitedModel.tblTSTimesheetHour">
+        <MappingFragment StoreEntitySet="tblTSTimesheetHours">
+          <ScalarProperty Name="TimesheetHoursID" ColumnName="TimesheetHoursID" />
+          <ScalarProperty Name="EmployeeInfoId" ColumnName="EmployeeInfoId" />
+          <ScalarProperty Name="PayPeriod" ColumnName="PayPeriod" />
+          <ScalarProperty Name="ProcessedPayPeriod" ColumnName="ProcessedPayPeriod" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="TimeStart" ColumnName="TimeStart" />
+          <ScalarProperty Name="TimeEnd" ColumnName="TimeEnd" />
+          <ScalarProperty Name="Hours" ColumnName="Hours" />
+          <ScalarProperty Name="HoursTypeID" ColumnName="HoursTypeID" />
+          <ScalarProperty Name="HoursRegular" ColumnName="HoursRegular" />
+          <ScalarProperty Name="HoursHoliday" ColumnName="HoursHoliday" />
+          <ScalarProperty Name="HoursPTO" ColumnName="HoursPTO" />
+          <ScalarProperty Name="HoursJuryDuty" ColumnName="HoursJuryDuty" />
+          <ScalarProperty Name="HoursBereavement" ColumnName="HoursBereavement" />
+          <ScalarProperty Name="HoursUnpaid" ColumnName="HoursUnpaid" />
+          <ScalarProperty Name="HoursVolunteerPTO" ColumnName="HoursVolunteerPTO" />
+          <ScalarProperty Name="OnCall" ColumnName="OnCall" />
+          <ScalarProperty Name="Mileage" ColumnName="Mileage" />
+          <ScalarProperty Name="Parking" ColumnName="Parking" />
+          <ScalarProperty Name="StatusTypeId" ColumnName="StatusTypeId" />
+          <ScalarProperty Name="EntryDate" ColumnName="EntryDate" />
+          <ScalarProperty Name="EntryUser" ColumnName="EntryUser" />
+          <ScalarProperty Name="SubmitDate" ColumnName="SubmitDate" />
+          <ScalarProperty Name="SubmitUser" ColumnName="SubmitUser" />
+          <ScalarProperty Name="ApproveDate" ColumnName="ApproveDate" />
+          <ScalarProperty Name="ApproveUser" ColumnName="ApproveUser" />
+          <ScalarProperty Name="ProcessDate" ColumnName="ProcessDate" />
+          <ScalarProperty Name="ProcessPayPeriod" ColumnName="ProcessPayPeriod" />
+          <ScalarProperty Name="LockOutEmployee" ColumnName="LockOutEmployee" />
+          <ScalarProperty Name="LockOutManager" ColumnName="LockOutManager" />
+          <ScalarProperty Name="LockOutAll" ColumnName="LockOutAll" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

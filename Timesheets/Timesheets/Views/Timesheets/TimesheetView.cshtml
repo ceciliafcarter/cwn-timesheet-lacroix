@@ -1,0 +1,56 @@
+﻿@model NM.Web.WebApplication.Timesheets.Models.ViewModel.TimesheetViewModel
+@{
+    ViewBag.Title = "Index";
+}
+
+@using GridMvc.Html
+
+@using (Html.BeginForm())
+{
+
+    <div class="container">
+        <div class="row">
+            <br />
+            <div class="col-lg-6">
+                <p>List of Pay Periods: @Html.DropDownListFor(m => Model.PayPeriodDates, new SelectList(Model.PayPeriodDates, "Value", "Text"), new { id = "ddlPayPeriodId", @class = "form-control", onchange = "OnChangePayPeriod();" })</p>
+                @if (Model.IsUserNonExempt)
+                {
+                    <div id="dvTSWeeklyView" class="grid-header-title"></div>
+                    @Html.Grid(Model.TimesheetHours, "_Grid").Columns(col =>
+                   {
+                       col.Add(m => m.Day, "Day")
+                            .Titled("Day");
+                       col.Add(m => m.EntryDate, "EntryDate")
+                            .Titled("Date");
+                       col.Add(m => m.HourType, "Type")
+                            .Titled("Type");
+                       col.Add(m => m.StartTime, "StartTime")
+                            .Titled("Start Time");
+                       col.Add(m => m.EndTime, "EndTime")
+                            .Titled("End Time");
+                       col.Add(m => m.Hours, "Hours")
+                            .Titled("Hours");
+                   })
+                }
+            </div>
+            <div class="col-lg-6">
+                <div id="dvAddTimeEntry" class="grid-header-title">Add Time</div>
+            </div>
+        </div>
+    </div>
+
+}
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        //Make the Timesheet nav tab active
+        $("#navTimesheet").addClass("active");
+
+    });
+    function OnChangePayPeriod() {
+        //debugger;
+        var payPeriodId = $('#ddlPayPeriodId :selected').text();
+        $("#dvTSWeeklyView").text(payPeriodId);
+    }
+</script>
+

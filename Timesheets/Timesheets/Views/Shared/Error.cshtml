@@ -4,6 +4,18 @@
     ViewBag.Title = "Error";
 }
 
-<h1 class="text-danger">Error.</h1>
-<h2 class="text-danger">An error occurred while processing your request.</h2>
+<h1 class="text-danger">Oops! Something went wrong! </h1>
+<h3 class="text-danger">Please contact our site admin. <br /> If you see them, show them this information.</h3>
+<ul>
+    <li>ActionName: @Model.ActionName</li>
+    <li>ControllerName: @Model.ControllerName</li>
+    <li>Exception: @Model.Exception.Message</li>
+    <li>Source: @Model.Exception.Source</li>
+    @if (ViewBag.CurrentEnvironment == null || (ViewBag.CurrentEnvironment != "prod" && ViewBag.CurrentEnvironment != "production"))
+    {
+        <li>StackTrace: @Model.Exception.StackTrace</li>
+        <li>TargetSite: @Model.Exception.TargetSite</li>
+    }
+
+</ul>
 

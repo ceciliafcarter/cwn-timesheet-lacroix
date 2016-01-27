@@ -14,6 +14,7 @@ namespace NM.Web.WebApplication.Timesheets.Models.ViewModel
         public List<SelectListItem> PayPeriodDates { get; set; }
         public List<TSHourEntryViewModel> TimesheetHours { get; set; }
         public bool IsUserNonExempt { get; set; }
+        public YearAndPayPeriodViewModel YearAndPayPeriod { get; set; }
 
 
     }

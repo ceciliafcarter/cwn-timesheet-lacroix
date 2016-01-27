@@ -32,7 +32,7 @@ namespace NM.Web.WebApplication.Timesheets.United.Concrete
         }
         public void SaveChanges()
         {
-            throw new NotImplementedException();
+            db.SaveChanges();
         }
 
         public List<string> GenerateYearsBasedOnCurrentYear(int numberOfYears = 10)
@@ -57,5 +57,13 @@ namespace NM.Web.WebApplication.Timesheets.United.Concrete
             }
             return stringYears.ToList();           
         }
+
+        public List<United.BusinessModel.TimePayPeriod> GetCurrentNextPreviousPayPeriod()
+        {
+            List<United.BusinessModel.TimePayPeriod> result = db.Database
+                .SqlQuery<United.BusinessModel.TimePayPeriod>("dbo.spTSGetCurrentNextPreviousPayPeriod").ToList();
+            return result;
+        }
+
     }
 }

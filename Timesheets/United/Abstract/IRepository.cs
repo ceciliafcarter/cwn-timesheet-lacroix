@@ -13,5 +13,6 @@ namespace NM.Web.WebApplication.Timesheets.United.Abstract
         tblMasterUser GetMasterUser();
         tblMasterUser GetMasterUser(string userName);
         List<string> GenerateYearsBasedOnCurrentYear(int numberOfYears);
+        List<United.BusinessModel.TimePayPeriod> GetCurrentNextPreviousPayPeriod();
     }
 }

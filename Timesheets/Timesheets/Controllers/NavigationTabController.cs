@@ -14,6 +14,14 @@ namespace NM.Web.WebApplication.Timesheets.Controllers
             repository = repo;
         }
 
+        public enum TimePeriodType
+        {
+            Current,
+            Next,
+            Previous,
+            DateRange
+        }
+
         #region Actions
         // GET: NavigationTab
         public ActionResult Nav()
@@ -21,18 +29,46 @@ namespace NM.Web.WebApplication.Timesheets.Controllers
             return PartialView("Nav");
         }
 
-        public ActionResult Header()
+        //public ActionResult Header()
+        //{
+        //    var listOfYears = repository.GenerateYearsBasedOnCurrentYear(numberOfYearsToGenerateBasedOnCurrentYear).OrderBy(i => i);
+        //    var timeYears = new List<SelectListItem>();
+        //    foreach (var lstYear in listOfYears)
+        //    {
+        //        timeYears.Add(new SelectListItem { Text = lstYear, Value = lstYear });
+        //    }
+        //    var currentYear = DateTime.Now.Year;
+
+        //    var payPeriods = AutoMapper.Mapper.Map(repository.GetCurrentNextPreviousPayPeriod(), new List<Models.ViewModel.PayPeriodViewModel>());
+
+        //    List<SelectListItem> slTimePeriods = new List<SelectListItem>();
+        //    foreach (var payperiod in payPeriods)
+        //    {
+        //        var strPayPeriod = payperiod.dtmPeriodStart + "-" + payperiod.dtmPeriodEnd;
+        //        slTimePeriods.Add(new SelectListItem { Text = payperiod.TimePeriod, Value = strPayPeriod.ToString() });
+        //    }
+        //    if (slTimePeriods.Count() == payPeriods.Count())
+        //    {
+        //        slTimePeriods.Add(new SelectListItem { Text = "Date Range", Value = TimePeriodType.DateRange.ToString() });
+        //    }
+
+        //    Models.ViewModel.YearAndPayPeriodViewModel model = new Models.ViewModel.YearAndPayPeriodViewModel()
+        //    {
+        //        TimeYears = timeYears,
+        //        PayPeriods = null,
+        //        CurrentYear = currentYear,
+        //        CurrentPayPeriod = payPeriods.FirstOrDefault(i => i.TimePeriod == TimePeriodType.Current.ToString()),
+        //        PreviousPayPeriod = payPeriods.FirstOrDefault(i => i.TimePeriod == TimePeriodType.Previous.ToString()),
+        //        NextPayPeriod = payPeriods.FirstOrDefault(i => i.TimePeriod == TimePeriodType.Next.ToString()),
+        //        TimePeriods = slTimePeriods
+        //    };
+
+        //    return PartialView("Header", model);
+        //}
+
+        public ActionResult TimesheetHeader()
         {
-
-            if (ViewBag.CurrentUserName != null)
-            {
-                CurrentLoginUserName = ViewBag.CurrentUserName;
-            }
-            else
-            {
-                CurrentLoginUserName = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
-            }
-
+            //Get the list of Years based on current Year
             var listOfYears = repository.GenerateYearsBasedOnCurrentYear(numberOfYearsToGenerateBasedOnCurrentYear).OrderBy(i => i);
             var timeYears = new List<SelectListItem>();
             foreach (var lstYear in listOfYears)
@@ -41,19 +77,36 @@ namespace NM.Web.WebApplication.Timesheets.Controllers
             }
             var currentYear = DateTime.Now.Year;
 
-            var listOfPayPeriods = new List<SelectListItem>();
-            listOfPayPeriods.Add(new SelectListItem { Text = "03/22/2016-03/28/2016", Value = "1" });
-            listOfPayPeriods.Add(new SelectListItem { Text = "03/29/2016-04/15/2016", Value = "2" });
-            NM.Web.WebApplication.Timesheets.Models.ViewModel.EmployeeInfoHeaderViewModel model = new Models.ViewModel.EmployeeInfoHeaderViewModel()
+            //Get current, next and previous pay periods
+            var payPeriods = AutoMapper.Mapper.Map(repository.GetCurrentNextPreviousPayPeriod(), new List<Models.ViewModel.PayPeriodViewModel>());
+
+            //Get TimePeriod Type
+            List<SelectListItem> slTimePeriods = new List<SelectListItem>();
+            foreach (var payperiod in payPeriods)
             {
-                displayYear = currentYear.ToString(),
-                FullName = "Cecilia Carter",
+                var strPayPeriod = payperiod.dtmPeriodStart + "-" + payperiod.dtmPeriodEnd;
+                slTimePeriods.Add(new SelectListItem { Text = payperiod.TimePeriod, Value = strPayPeriod.ToString() });
+            }
+            if (slTimePeriods.Count() == payPeriods.Count())
+            {
+                slTimePeriods.Add(new SelectListItem { Text = "Date Range", Value = "-1" });
+            }
+
+            //Populate YearAndPayPeriodViewModel
+            Models.ViewModel.YearAndPayPeriodViewModel model = new Models.ViewModel.YearAndPayPeriodViewModel()
+            {
                 TimeYears = timeYears,
-                PayPeriod = listOfPayPeriods
+                PayPeriods = payPeriods,
+                CurrentYear = currentYear,
+                CurrentPayPeriod = payPeriods.FirstOrDefault(i => i.TimePeriod == TimePeriodType.Current.ToString()),
+                PreviousPayPeriod = payPeriods.FirstOrDefault(i => i.TimePeriod == TimePeriodType.Previous.ToString()),
+                NextPayPeriod = payPeriods.FirstOrDefault(i => i.TimePeriod == TimePeriodType.Next.ToString()),
+                TimePeriods = slTimePeriods
             };
 
             return PartialView("Header", model);
         }
+
         #endregion Actions
 
         #region private methods

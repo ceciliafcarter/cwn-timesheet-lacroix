@@ -56,7 +56,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\IRepository.cs" />
+    <Compile Include="BusinessModel\TimePayPeriod.cs" />
     <Compile Include="Concrete\Repository.cs" />
+    <Compile Include="Enums\Enumeration.cs" />
     <Compile Include="Models\tblIndividual.cs">
       <DependentUpon>UnitedEdm.tt</DependentUpon>
     </Compile>
